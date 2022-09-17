@@ -10,4 +10,9 @@ const Section = ({ title, children }) => {
     )
 }
 
-export {Section}
+export { Section }
+
+Section.propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired
+}
